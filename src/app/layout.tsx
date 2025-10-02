@@ -13,8 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "SJ Hostel - Student Accommodation",
-  description: "SJ Hostel provides comfortable and safe accommodation for students with excellent facilities and 24/7 security.",
+    title: "SJ Boys' Hostel - Student Accommodation",
+    description:
+        "SJ Boys' Hostel provides comfortable and safe accommodation for male students with excellent facilities and 24/7 security.",
 };
 
 export default function RootLayout({
