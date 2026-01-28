@@ -2,15 +2,13 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { FileText, Download, Eye, Calendar, FileType } from "lucide-react";
+import { FileText, Download, Eye, X } from "lucide-react";
 import { useState } from "react";
 
 interface Document {
     id: string;
     title: string;
-    description: string;
     type: string;
-    date: string;
     fileUrl: string;
     category: "form" | "notice" | "rule" | "other";
 }
@@ -24,45 +22,35 @@ export default function Documents() {
         {
             id: "1",
             title: "Hostel Application Form",
-            description: "Application form for new hostel admission",
             type: "PDF",
-            date: "2024-01-15",
             fileUrl: "/documents/timetable.pdf",
             category: "form",
         },
         {
             id: "2",
             title: "Hostel Rules & Regulations",
-            description: "Complete hostel rules and regulations document",
             type: "PDF",
-            date: "2024-01-10",
             fileUrl: "/documents/rules-regulations.pdf",
             category: "rule",
         },
         {
             id: "3",
             title: "Fee Payment Notice",
-            description: "Important notice regarding hostel fee payment",
             type: "PDF",
-            date: "2024-01-20",
             fileUrl: "/documents/fee-notice.pdf",
             category: "notice",
         },
         {
             id: "4",
             title: "Room Allotment Guidelines",
-            description: "Guidelines for room allotment process",
             type: "PDF",
-            date: "2024-01-08",
             fileUrl: "/documents/room-allotment.pdf",
             category: "other",
         },
         {
             id: "5",
             title: "Leave Application Form",
-            description: "Form for applying hostel leave",
             type: "PDF",
-            date: "2024-01-05",
             fileUrl: "/documents/leave-form.pdf",
             category: "form",
         },
@@ -127,16 +115,16 @@ export default function Documents() {
             {/* Documents Grid */}
             <section className="py-12 lg:py-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                         {documents.map((doc) => (
                             <Card
                                 key={doc.id}
                                 className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-2 hover:border-blue-300"
                             >
                                 <CardContent className="p-6">
-                                    <div className="flex items-start justify-between mb-4">
-                                        <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                                            <FileText className="w-6 h-6 text-blue-600" />
+                                    <div className="flex items-start justify-between mb-6">
+                                        <div className="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                                            <FileText className="w-7 h-7 text-blue-600" />
                                         </div>
                                         <span
                                             className={`px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(
@@ -147,24 +135,9 @@ export default function Documents() {
                                         </span>
                                     </div>
 
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
+                                    <h3 className="text-lg font-bold text-gray-900 mb-6 group-hover:text-blue-600 transition-colors line-clamp-2">
                                         {doc.title}
                                     </h3>
-                                    <p className="text-gray-600 mb-4 line-clamp-2">
-                                        {doc.description}
-                                    </p>
-
-                                    <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
-                                        <Calendar className="w-4 h-4" />
-                                        <span>{new Date(doc.date).toLocaleDateString('en-US', { 
-                                            year: 'numeric', 
-                                            month: 'short', 
-                                            day: 'numeric' 
-                                        })}</span>
-                                        <span className="mx-2">•</span>
-                                        <FileType className="w-4 h-4" />
-                                        <span>{doc.type}</span>
-                                    </div>
 
                                     <div className="flex gap-2">
                                         <Button
@@ -204,14 +177,9 @@ export default function Documents() {
                     >
                         {/* Modal Header */}
                         <div className="flex items-center justify-between p-6 border-b">
-                            <div>
-                                <h2 className="text-2xl font-bold text-gray-900">
-                                    {selectedDocument.title}
-                                </h2>
-                                <p className="text-gray-600 text-sm mt-1">
-                                    {selectedDocument.description}
-                                </p>
-                            </div>
+                            <h2 className="text-2xl font-bold text-gray-900">
+                                {selectedDocument.title}
+                            </h2>
                             <div className="flex gap-2">
                                 <Button
                                     onClick={() => handleDownload(selectedDocument)}
@@ -243,25 +211,5 @@ export default function Documents() {
                 </div>
             )}
         </>
-    );
-}
-
-function X({ className }: { className?: string }) {
-    return (
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className={className}
-        >
-            <path d="M18 6 6 18" />
-            <path d="m6 6 12 12" />
-        </svg>
     );
 }

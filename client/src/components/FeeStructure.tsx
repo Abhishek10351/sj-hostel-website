@@ -62,8 +62,7 @@ export default function FeeStructure() {
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Fee Structure</h3>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Transparent and affordable pricing for quality accommodation and services.
-            All fees are inclusive of applicable taxes.
+            Transparent pricing for quality accommodation and services.
           </p>
         </div>
 

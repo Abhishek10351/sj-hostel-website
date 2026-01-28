@@ -88,6 +88,14 @@ export default function Footer() {
                             </li>
                             <li>
                                 <a
+                                    href="/documents"
+                                    className="text-slate-400 hover:text-white transition-colors duration-200"
+                                >
+                                    Documents
+                                </a>
+                            </li>
+                            <li>
+                                <a
                                     href="/contact"
                                     className="text-slate-400 hover:text-white transition-colors duration-200"
                                 >
@@ -175,8 +183,7 @@ export default function Footer() {
                     }`}
                 >
                     <p className="text-slate-400 text-xs md:text-sm">
-                        © 2025 SJ Boys' Hostel. All rights reserved. | Designed
-                        for student accommodation excellence.
+                        © 2026 SJ Boys' Hostel. All rights reserved.
                     </p>
                 </div>
             </div>

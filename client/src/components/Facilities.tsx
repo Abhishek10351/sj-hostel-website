@@ -11,6 +11,7 @@ import {
     Car,
     Headphones,
 } from "lucide-react";
+
 import { useEffect, useRef, useState } from "react";
 
 export default function Facilities() {
@@ -108,12 +109,11 @@ export default function Facilities() {
                     }`}
                 >
                     <h3 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
-                        Hostel Facilities
+                        Facilities & Amenities
                     </h3>
                     <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
                     <p className="text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto">
-                        Comprehensive amenities designed to support your
-                        academic journey and daily life
+                        Essential amenities and services for comfortable living and academic success
                     </p>
                 </div>
 

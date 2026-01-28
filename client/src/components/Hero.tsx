@@ -42,8 +42,7 @@ export default function Hero() {
                         </h1>
 
                         <p className="text-lg sm:text-xl lg:text-2xl mb-8 text-blue-100 leading-relaxed max-w-2xl">
-                            Student Residential Accommodation Facility for Male
-                            Students
+                            Quality Student Accommodation for Academic Excellence
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-4">

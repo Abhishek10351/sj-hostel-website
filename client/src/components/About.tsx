@@ -71,13 +71,9 @@ export default function About() {
                     </h3>
                     <div className="w-24 h-1 bg-blue-600 mx-auto mb-6"></div>
                     <p className="text-lg lg:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                        SJ Boys' Hostel is a dedicated residential facility for
-                        male students, designed to provide safe, comfortable,
-                        and supportive accommodation for young men pursuing
-                        their academic goals. Our facility maintains high
-                        standards of living and academic environment. Students
-                        are allotted accommodation based on institutional
-                        guidelines and availability.
+                        SJ Boys' Hostel provides safe, comfortable accommodation for male students
+                        pursuing their academic goals. We maintain high standards of living with
+                        modern facilities and a supportive environment conducive to learning.
                     </p>
                 </div>
 

@@ -20,8 +20,6 @@ export default function Rules() {
         "Residents must maintain discipline and respect fellow students at all times",
         "Ragging in any form is strictly prohibited and will result in immediate expulsion",
         "Smoking, alcohol consumption, and substance abuse are strictly forbidden",
-        "Female visitors are not permitted in room areas. Common area meetings only during visiting hours",
-        "Students must carry their hostel ID cards at all times within the premises",
         "Proper dress code must be maintained in common areas and mess hall"
       ]
     },
@@ -34,7 +32,6 @@ export default function Rules() {
         "Study hours: 6:00 PM to 10:00 PM (silence must be maintained in all floors)",
         "Breakfast: 7:00 AM - 9:00 AM, Lunch: 12:00 PM - 2:00 PM, Dinner: 7:00 PM - 9:00 PM",
         "Room cleaning and inspection: Every Saturday 9:00 AM - 11:00 AM (mandatory attendance)",
-        "Lights out by 11:00 PM on weekdays, 12:00 AM on weekends",
         "Visiting hours for family: Sundays 10:00 AM - 5:00 PM (lobby area only)"
       ]
     },
@@ -47,7 +44,6 @@ export default function Rules() {
         "Damage to hostel property will be charged to the student's account",
         "Room sharing is not permitted without prior approval from the warden",
         "Electrical appliances must be approved by the administration before use",
-        "Rooms must be kept clean and tidy. Random inspections will be conducted"
       ]
     },
     {
@@ -58,7 +54,6 @@ export default function Rules() {
         "WiFi usage is monitored. Misuse may result in connection termination",
         "Music and entertainment devices should not disturb other residents",
         "Mobile phones should be on silent mode during study hours",
-        "Gaming and streaming are restricted during peak study hours",
         "Technical support is available only during office hours"
       ]
     }
@@ -70,8 +65,7 @@ export default function Rules() {
         <div className="text-center mb-12">
           <h3 className="text-3xl font-bold text-gray-900 mb-4">Rules & Regulations</h3>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            These guidelines ensure a safe, peaceful, and conducive environment for all male residents.
-            All students are expected to familiarize themselves with and adhere to these regulations.
+            Guidelines ensuring a safe, peaceful, and conducive environment for all residents.
           </p>
         </div>
 

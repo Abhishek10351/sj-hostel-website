@@ -127,8 +127,7 @@ export default function HostelCommittee() {
             Hostel Management & Committee
           </h3>
           <p className="text-base md:text-lg text-gray-600 max-w-3xl mx-auto">
-            Our dedicated team ensures smooth operations and maintains a conducive living environment 
-            for all male residents through effective management and student participation.
+            Dedicated team ensuring smooth operations and a conducive living environment.
           </p>
         </div>
 

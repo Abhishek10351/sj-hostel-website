@@ -40,8 +40,7 @@ export default function Contact() {
                         Contact Information
                     </h3>
                     <p className="text-base md:text-lg text-slate-300">
-                        For inquiries regarding hostel allotment and
-                        accommodation details
+                        Get in touch for inquiries and assistance
                     </p>
                 </div>
 
