@@ -4,12 +4,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import {
     Utensils,
     Wifi,
-    WashingMachine,
     BookOpen,
     Bath,
-    Heart,
-    Car,
-    Headphones,
 } from "lucide-react";
 
 import { useEffect, useRef, useState } from "react";
@@ -38,59 +34,31 @@ export default function Facilities() {
     const facilities = [
         {
             icon: Utensils,
-            title: "Dining Hall",
-            description: "Hygienic mess facility with nutritious meals",
+            title: "Mess Facility",
+            description: "Nutritious meals three times daily",
             color: "text-orange-600",
             bgColor: "bg-orange-50",
         },
         {
             icon: Wifi,
-            title: "Internet Connectivity",
-            description: "High-speed WiFi access throughout the premises",
+            title: "WiFi Internet",
+            description: "High-speed connectivity throughout hostel",
             color: "text-blue-600",
             bgColor: "bg-blue-50",
         },
         {
-            icon: WashingMachine,
-            title: "Laundry Services",
-            description: "Washing and drying facilities for residents",
-            color: "text-purple-600",
-            bgColor: "bg-purple-50",
-        },
-        {
             icon: BookOpen,
-            title: "Study Hall",
-            description: "Dedicated spaces for academic activities",
+            title: "Study Room",
+            description: "Quiet study spaces for students",
             color: "text-green-600",
             bgColor: "bg-green-50",
         },
         {
             icon: Bath,
-            title: "Sanitation Facilities",
-            description: "Clean washrooms with hot water supply",
+            title: "Washroom Facilities",
+            description: "Clean washrooms with hot water",
             color: "text-cyan-600",
             bgColor: "bg-cyan-50",
-        },
-        {
-            icon: Heart,
-            title: "Medical Assistance",
-            description: "First aid and medical support available",
-            color: "text-red-600",
-            bgColor: "bg-red-50",
-        },
-        {
-            icon: Car,
-            title: "Vehicle Parking",
-            description: "Secure parking area for resident vehicles",
-            color: "text-gray-600",
-            bgColor: "bg-gray-50",
-        },
-        {
-            icon: Headphones,
-            title: "Administrative Support",
-            description: "Round-the-clock staff assistance",
-            color: "text-indigo-600",
-            bgColor: "bg-indigo-50",
         },
     ];
 
