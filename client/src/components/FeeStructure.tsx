@@ -12,40 +12,23 @@ export default function FeeStructure() {
   const feeTypes = [
     {
       type: "Accommodation Fee",
-      description: "Monthly room rent including basic utilities",
+      description: "Room rent including basic utilities",
       amount: "₹8,000",
-      period: "Per Month",
+      period: "Per Semester",
       color: "bg-blue-600"
     },
     {
       type: "Mess Fee",
-      description: "Three meals per day (breakfast, lunch, dinner)",
-      amount: "₹4,500",
-      period: "Per Month",
+      description: "Three meals per day",
+      amount: "₹13,000",
+      period: "Per Semester",
       color: "bg-green-600"
     },
-    {
-      type: "Security Deposit",
-      description: "Refundable deposit (returned upon checkout)",
-      amount: "₹15,000",
-      period: "One-time",
-      color: "bg-purple-600"
-    },
-    {
-      type: "Admission Fee",
-      description: "One-time registration and processing fee",
-      amount: "₹2,000",
-      period: "One-time",
-      color: "bg-orange-600"
-    }
   ];
 
   const additionalCharges = [
-    { service: "Laundry Service", charge: "₹500/month", optional: true },
     { service: "WiFi Connection", charge: "Included", optional: false },
-    { service: "Electricity (beyond 100 units)", charge: "₹5/unit", optional: false },
     { service: "Room Damage", charge: "As per actual", optional: false },
-    { service: "Key Replacement", charge: "₹200", optional: false },
     { service: "Late Payment Fine", charge: "₹100/day", optional: false }
   ];
 

@@ -1,14 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Clock, 
-  Shield, 
-  Users, 
-  Wifi, 
-  Volume2, 
-  Utensils,
-  AlertTriangle 
-} from "lucide-react";
+import { Clock, Shield, Users, AlertTriangle } from "lucide-react";
 
 export default function Rules() {
   const ruleCategories = [
@@ -17,44 +9,29 @@ export default function Rules() {
       icon: Users,
       color: "bg-blue-50 border-blue-200",
       rules: [
-        "Residents must maintain discipline and respect fellow students at all times",
-        "Ragging in any form is strictly prohibited and will result in immediate expulsion",
-        "Smoking, alcohol consumption, and substance abuse are strictly forbidden",
-        "Proper dress code must be maintained in common areas and mess hall"
+        "Maintain discipline and respect fellow students",
+        "Ragging, smoking, alcohol, and substance abuse are strictly prohibited",
+        "Proper dress code required in common areas"
       ]
     },
     {
-      title: "Time Regulations",
+      title: "Timings",
       icon: Clock,
       color: "bg-green-50 border-green-200",
       rules: [
-        "Hostel gates close at 10:00 PM sharp. Late entry requires prior permission from warden",
-        "Study hours: 6:00 PM to 10:00 PM (silence must be maintained in all floors)",
-        "Breakfast: 7:00 AM - 9:00 AM, Lunch: 12:00 PM - 2:00 PM, Dinner: 7:00 PM - 9:00 PM",
-        "Room cleaning and inspection: Every Saturday 9:00 AM - 11:00 AM (mandatory attendance)",
-        "Visiting hours for family: Sundays 10:00 AM - 5:00 PM (lobby area only)"
+        "Hostel gates close at 10:00 PM",
+        "Study hours: 6:00 PM - 10:00 PM (maintain silence)",
+        "Mess timings: Breakfast 7-9 AM, Lunch 12-2 PM, Dinner 8-10 PM"
       ]
     },
     {
-      title: "Room & Property",
+      title: "Property & Safety",
       icon: Shield,
       color: "bg-purple-50 border-purple-200",
       rules: [
-        "Room keys are the responsibility of the student. Loss will incur replacement charges",
-        "Damage to hostel property will be charged to the student's account",
-        "Room sharing is not permitted without prior approval from the warden",
-        "Electrical appliances must be approved by the administration before use",
-      ]
-    },
-    {
-      title: "Technology & Noise",
-      icon: Wifi,
-      color: "bg-orange-50 border-orange-200",
-      rules: [
-        "WiFi usage is monitored. Misuse may result in connection termination",
-        "Music and entertainment devices should not disturb other residents",
-        "Mobile phones should be on silent mode during study hours",
-        "Technical support is available only during office hours"
+        "Students responsible for room keys and property",
+        "Electrical appliances require prior approval",
+        "Report any damages immediately to administration"
       ]
     }
   ];
