@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Header from "@/components/Header";
 import Facilities from "@/components/Facilities";
 import Rules from "@/components/Rules";
 import FeeStructure from "@/components/FeeStructure";
@@ -14,7 +13,6 @@ export const metadata: Metadata = {
 export default function InformationPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
       <div className="pt-8">
         {/* Page Header */}
         <section className="py-12 lg:py-16 bg-gradient-to-br from-blue-50 via-white to-blue-50">

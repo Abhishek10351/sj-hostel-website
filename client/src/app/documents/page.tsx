@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Header from "@/components/Header";
 import Documents from "@/components/Documents";
 import Footer from "@/components/Footer";
 
@@ -11,7 +10,6 @@ export const metadata: Metadata = {
 export default function DocumentsPage() {
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
       <div className="pt-8">
         <Documents />
       </div>
