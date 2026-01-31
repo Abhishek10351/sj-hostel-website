@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import Documents from "@/components/Documents";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Documents - SJ Boys' Hostel",
@@ -13,7 +12,6 @@ export default function DocumentsPage() {
       <div className="pt-8">
         <Documents />
       </div>
-      <Footer />
     </div>
   );
 }

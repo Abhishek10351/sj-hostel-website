@@ -1,6 +1,5 @@
 import { Metadata } from "next";
 import HostelCommittee from "@/components/HostelCommittee";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Management - SJ Boys' Hostel",
@@ -13,7 +12,6 @@ export default function ManagementPage() {
       <div className="pt-8">
         <HostelCommittee />
       </div>
-      <Footer />
     </div>
   );
 }

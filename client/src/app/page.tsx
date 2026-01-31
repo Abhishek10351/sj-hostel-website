@@ -1,7 +1,6 @@
 import { Metadata } from "next";
-import Header from "@/components/Header";
 import About from "@/components/About";
-import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 export const metadata: Metadata = {
     title: "SJ Boys' Hostel - Student Accommodation",
@@ -13,7 +12,7 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-gray-50">
             <About />
-            <Footer />
+            <Contact />
         </div>
     );
 }

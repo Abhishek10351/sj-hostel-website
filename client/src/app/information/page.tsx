@@ -2,7 +2,6 @@ import { Metadata } from "next";
 import Facilities from "@/components/Facilities";
 import Rules from "@/components/Rules";
 import FeeStructure from "@/components/FeeStructure";
-import Footer from "@/components/Footer";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export const metadata: Metadata = {
@@ -77,7 +76,6 @@ export default function InformationPage() {
           </div>
         </section>
       </div>
-      <Footer />
     </div>
   );
 }
